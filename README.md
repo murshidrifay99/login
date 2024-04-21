@@ -1,3 +1,52 @@
+To install Node.js, Angular CLI, Visual Studio Code (VSCode), and run code from a GitHub repository, follow these steps:
+
+Install Node.js:
+Download and install Node.js from the official website: Node.js.
+Install Angular CLI:
+Open a terminal or command prompt.
+
+Install Angular CLI globally by running the following command:
+
+npm install -g @angular/cli
+
+## Install Visual Studio Code (VSCode):
+Download and install VSCode from the official website: Visual Studio Code.
+
+##Clone a GitHub Repository:
+
+Open VSCode.
+Use the integrated terminal in VSCode or open a separate terminal.
+
+## Clone the GitHub repository to your local machine:
+
+git clone [https://github.com/username/repository.git](https://github.com/murshidrifay99/login.git)
+
+## Navigate to the Cloned Repository:
+
+Use the terminal to navigate into the cloned repository:
+
+cd repository
+Replace repository with the name of the repository.
+
+## Install Dependencies (if needed):
+
+If the repository contains a package.json file, install the dependencies by running:
+
+npm install
+
+## Run the Code:
+
+Follow the instructions in the repository's README file or documentation to run the code. For Angular projects, you can use:
+
+ng serve --open
+
+This command will build the Angular application and open it in your default web browser.
+
+##Access the Application:
+
+Once the code is running, you can access the application in your web browser. For Angular applications, it will typically be available at http://localhost:4200/.
+
+
 # Login
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
