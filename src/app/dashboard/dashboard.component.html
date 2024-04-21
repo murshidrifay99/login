@@ -1,0 +1,19 @@
+<!-- dashboard.component.html -->
+<mat-toolbar color="primary">
+  <span>Dashboard</span>
+  <span class="spacer"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="logout()">Logout</button>
+  </mat-menu>
+</mat-toolbar>
+
+<div class="dashboard-container">
+  <mat-card class="dashboard-card">
+    <mat-card-content>
+      <p>Welcome, {{ username }}!</p>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,13 @@
+/* dashboard.component.css */
+.dashboard-container {
+  padding: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Optional: Adjust the menu button position */
+.mat-toolbar-row {
+  justify-content: space-between;
+}
