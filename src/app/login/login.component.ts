@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../service/auth.service';
+import md5 from 'md5';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,7 @@ export class LoginComponent {
   constructor(private authService: AuthService, private router: Router) {}
 
   login() {
-    this.authService.login(this.username, this.password).subscribe(success => {
+    this.authService.login(this.username, md5(this.password)).subscribe(success => {
       if (success) {
         this.router.navigate(['/dashboard']); // Redirect to dashboard
       } else {
